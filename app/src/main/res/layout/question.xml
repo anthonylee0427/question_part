@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anthonylee.myapplication.Random_Question"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/question_background"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#5faae8">
+
+    <TextView
+        android:text="請回答下列三個問題："
+        android:textSize="10pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/question_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/text_color"/>
+
+
+    <TextView
+        android:text="哪種人格特質對你最重要？"
+        android:textSize="8pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/question_text1"
+        android:layout_below="@+id/question_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/question_spinner1"
+        android:layout_below="@+id/question_text1"
+        android:layout_alignLeft="@+id/question_text"
+        android:layout_alignStart="@+id/question_text"
+        android:layout_alignRight="@+id/question_text"
+        android:layout_alignEnd="@+id/question_text"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:text="你最喜歡如何度過假日？"
+        android:textSize="8pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/question_text2"
+        android:layout_below="@+id/question_spinner1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/question_spinner2"
+        android:layout_below="@+id/question_text2"
+        android:layout_alignLeft="@+id/question_text"
+        android:layout_alignStart="@+id/question_text"
+        android:layout_alignRight="@+id/question_text"
+        android:layout_alignEnd="@+id/question_text"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:text="遇到生活習慣不一樣的人，要如何相處？"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/question_text3"
+        android:layout_below="@+id/question_spinner2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/question_spinner3"
+        android:layout_below="@+id/question_text3"
+        android:layout_alignLeft="@+id/question_text"
+        android:layout_alignStart="@+id/question_text"
+        android:layout_alignRight="@+id/question_text"
+        android:layout_alignEnd="@+id/question_text"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:text="提交答案"
+        android:textSize="8pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_spinner3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button3" />
+        </RelativeLayout>
+</RelativeLayout>
